@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="./style.css">  
+</head>
+<body>
+
+  <audio controls autoplay>
+    <source src="sfx-victory6.mp3" type="audio/mpeg">
+  </audio>
+  <audio autoplay loop src="music/sfx-victory6.mp3"></audio>  
+  <div class="container">
+    <div class="top_box">
+      <div>
+      <img class="flt_l" src="images/JK-Cement-Logo.png" width="100" alt=""></div>
+      <div>
+      <img class="flt_r" src="images/logo2.png" width="80" alt=""></div>
+    </div>
+
+    <div class="top_box2">
+      <img class="" src="images/Logo_Tech-Xpert.png" width="80" alt="">
+     
+    </div>
+<div class="wishes1 p0 top0 show"> 
+  <p></p>
+  <div class="congo1"> <img class="" src="images/sgift.png" width="50%" alt=""></div>
+</div>
+
+  <div class="wishes p0 top0" show> 
+    <div class="congo1"> <img class="" src="images/congo.png" width="90%" alt=""></div>
+  </div>
+
+<main>
+    <div class="p_relt">
+        <img class="img1" src="images/wheel.png" alt="circle">
+
+  <!-- gift box -->
+<div class="gift_box box_bg">
+ 
+  <div class="gift">
+  
+  <input id='click1' type='checkbox'>
+ 
+  <label class='click' for='click1'></label>
+  <div class="wishes p0"> <span class="pts">5000</span> 
+    Points   
+  </div>
+      <div class="sparkles">
+      <div class="spark1"></div>
+      <div class="spark2"></div>
+      <div class="spark3"></div>
+      <div class="spark4"></div>
+      <div class="spark5"></div>
+      <div class="spark6"></div>
+
+    </div>
+
+   
+    </div>
+
+</div>
+<!-- gift box end -->
+
+<button id="grad1" class="button1">CLICK ON THE BOX & GRAB IT NOW</button>
+<div class="wishes txtftr"> 
+  <div>
+    <p class="font20"> You have won </p>
+     <div class="pts2"> 5000 Points.
+     </div>
+   </div>
+     
+   <p class="mt10">These points will get credited to your account soon!</p>
+  </div>
+    </div>
+</main>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".click").click(function(){
+    $(".wishes").css("display", "block");
+  });
+
+  $(".btn1").click(function(){
+    $(".gift_box").css("display", "block");
+  });
+
+});
+</script>
+<script type="text/javascript">
+  $(".button").click(function() {
+  $(".box")
+    .fadeIn()
+    .animate({ top: 0 },
+             { queue: false });
+});
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("#click1").click(function(){
+      $(".wishes1").hide();
+      $(".button1").hide();
+   
+    });
+  });
+  </script>
+</body>
+</html>
